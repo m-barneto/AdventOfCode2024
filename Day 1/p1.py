@@ -1,7 +1,7 @@
 left: list[int] = []
 right: list[int] = []
 
-with open("p1.txt") as input:
+with open("input.txt") as input:
     for line in input:
         nums = line.split("   ")
         left.append(int(nums[0]))
@@ -16,4 +16,4 @@ distance: int = 0
 for i in range(len(left)):
     distance += abs(left[i] - right[i])
 
-print(distance)
+print("Distance:", distance)
